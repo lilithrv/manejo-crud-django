@@ -1,0 +1,82 @@
+Región: Coquimbo
+Inmuebles:
+
+                    Nombre: Moderno Departamento en La Serena en Arriendo
+                    Descripción: Vive la comodidad y el estilo en La Serena con este moderno departamento, ideal para quienes buscan un hogar funcional en una de las zonas más agradables de la ciudad. Vive la comodidad y el estilo en La Serena con este moderno departamento, ideal para quienes buscan un hogar funcional en una de las zonas más agradables de la ciudad.
+                    M2 construidos: 100.0
+                    M2 totales: 120.0
+                    N° Habitaciones: 3
+                    N° Estacionamiento: 1
+                    N° baño: 2
+                    Dirección: Avenida Del Mar 456
+                    Comuna: La Serena
+                    Tipo de vivienda: Departamento
+                    Precio: 500000
+                    Dueño: Carlos Pérez
+                    -------------------------
+                    
+Región: Región del Biobío
+Inmuebles:
+
+                    Nombre: Parcela en Lota
+                    Descripción: ¡Descubre esta hermosa parcela en Lota, ideal para quienes buscan tranquilidad y confort! Esta propiedad cuenta con 300 m² construidos sobre un terreno total de 450 m². Consta de 6 amplias habitaciones y 4 modernos baños, perfectos para grandes familias o grupos. El inmueble está ubicado en una tranquila comuna de Lota, ofreciendo el equilibrio perfecto entre la cercanía a servicios esenciales y la paz de un entorno natural.
+                    M2 construidos: 300.0
+                    M2 totales: 450.0
+                    N° Habitaciones: 6
+                    N° Estacionamiento: 4
+                    N° baño: 4
+                    Dirección: Av. Los Claveles 345
+                    Comuna: Lota
+                    Tipo de vivienda: Parcela
+                    Precio: 1200000
+                    Dueño: Felipe Maldonado
+                    -------------------------
+                    
+Región: Región de Los Lagos
+Inmuebles:
+
+                    Nombre: Hermosa parcela en Chaitén
+                    Descripción: Disfruta de la belleza natural de Chaitén con esta encantadora parcela. Con una superficie construida de 382 m² sobre un terreno total de 500 m², esta propiedad es ideal para quienes buscan un rincón tranquilo en medio de la naturaleza. La parcela cuenta con 5 habitaciones y 3 baños, perfecta para quienes buscan simplicidad y confort en un entorno natural.
+                    M2 construidos: 382.0
+                    M2 totales: 500.0
+                    N° Habitaciones: 5
+                    N° Estacionamiento: 4
+                    N° baño: 3
+                    Dirección: Camino a Chaitén 789
+                    Comuna: Chaitén
+                    Tipo de vivienda: Parcela
+                    Precio: 1400000
+                    Dueño: Javier López
+                    -------------------------
+                    
+Región: Región Metropolitana de Santiago
+Inmuebles:
+
+                    Nombre: Amplia y acogedora casa en La Reina
+                    Descripción: Descubre esta hermosa casa ubicada en la tranquila comuna de La Reina, Santiago. Con un diseño funcional y acogedor, esta propiedad es ideal para familias o quienes buscan un hogar cómodo en un entorno residencial y apacible. Su ubicación en La Reina proporciona un acceso fácil a servicios, escuelas y áreas recreativas.
+                    M2 construidos: 170.0
+                    M2 totales: 250.0
+                    N° Habitaciones: 3
+                    N° Estacionamiento: 2
+                    N° baño: 2
+                    Dirección: Calle Los Cipreses 1234
+                    Comuna: La Reina
+                    Tipo de vivienda: Casa
+                    Precio: 800000
+                    Dueño: Juan Gómez
+                    -------------------------
+                    
+                    Nombre: Hermoso departamento en Recoleta
+                    Descripción: Vive en la vibrante comuna de Recoleta con este moderno departamento que combina comodidad y estilo en un entorno urbano. Ideal para quienes buscan un espacio funcional y bien ubicado en la capital. El departamento cuenta con modernos acabados y una distribución eficiente, ofreciendo un ambiente confortable y acogedor. Su ubicación en Recoleta proporciona fácil acceso a transporte público, centros comerciales, y una variedad de servicios y entretenimientos.
+                    M2 construidos: 78.0
+                    M2 totales: 90.0
+                    N° Habitaciones: 2
+                    N° Estacionamiento: 1
+                    N° baño: 1
+                    Dirección: Avenida Recoleta 4567
+                    Comuna: Recoleta
+                    Tipo de vivienda: Departamento
+                    Precio: 600000
+                    Dueño: Luis Navarro
+                    -------------------------
+                    

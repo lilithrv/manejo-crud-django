@@ -1,0 +1,178 @@
+[
+  {
+    "model": "arriendo.user",
+    "fields": {
+      "rut": 123456781,
+      "first_name": "Juan",
+      "second_name": "Pablo",
+      "last_name": "Gómez",
+      "second_surname": "Pérez",
+      "address": "Av. Providencia 1234, Santiago",
+      "phone_number": "987654321",
+      "email": "juan.gomez@example.com",
+      "user_type": 1,
+      "password": "pbkdf2_sha256$720000$qQ3wueoJ7E8rMNNpGpzTmA$9ZvFBtHo25tsgqnArZNTYHz7yFMfnaqhAkHZxjrIxcY=",
+      "username": "12345678abc1"
+    }
+  },
+  {
+    "model": "arriendo.user",
+    "fields": {
+      "rut": 134567892,
+      "first_name": "María",
+      "second_name": "Fernanda",
+      "last_name": "Muñoz",
+      "second_surname": "Castro",
+      "address": "Calle Los Condores 567, Santiago",
+      "phone_number": "912345678",
+      "email": "maria.munoz@example.com",
+      "user_type": 2,
+      "password": "pbkdf2_sha256$720000$qQ3wueoJ7E8rMNNpGpzTmA$9ZvFBtHo25tsgqnArZNTYHz7yFMfnaqhAkHZxjrIxcY=",
+      "username": "23456789d4f2"
+    }
+  },
+  {
+    "model": "arriendo.user",
+    "fields": {
+      "rut": 134567890,
+      "first_name": "Luis",
+      "second_name": "Alejandro",
+      "last_name": "Navarro",
+      "second_surname": "Soto",
+      "address": "Av. Libertador 987, Santiago",
+      "phone_number": "923456789",
+      "email": "luis.navarro@example.com",
+      "user_type": 1,
+      "password": "pbkdf2_sha256$720000$qQ3wueoJ7E8rMNNpGpzTmA$9ZvFBtHo25tsgqnArZNTYHz7yFMfnaqhAkHZxjrIxcY=",
+      "username": "34567890h7k8"
+    }
+  },
+  {
+    "model": "arriendo.user",
+    "fields": {
+      "rut": 45678901,
+      "first_name": "Ana",
+      "second_name": "Sofía",
+      "last_name": "Rivas",
+      "second_surname": "Martínez",
+      "address": "Calle La Reina 456, Santiago",
+      "phone_number": "934567890",
+      "email": "ana.rivas@example.com",
+      "user_type": 2,
+      "password": "pbkdf2_sha256$720000$qQ3wueoJ7E8rMNNpGpzTmA$9ZvFBtHo25tsgqnArZNTYHz7yFMfnaqhAkHZxjrIxcY=",
+      "username": "45678901x9y5"
+    }
+  },
+  {
+    "model": "arriendo.user",
+    "fields": {
+      "rut": 56789012,
+      "first_name": "Carlos",
+      "second_name": "Eduardo",
+      "last_name": "Pérez",
+      "second_surname": "García",
+      "address": "Av. O'Higgins 123, Santiago",
+      "phone_number": "945678901",
+      "email": "carlos.perez@example.com",
+      "user_type": 1,
+      "password": "pbkdf2_sha256$720000$qQ3wueoJ7E8rMNNpGpzTmA$9ZvFBtHo25tsgqnArZNTYHz7yFMfnaqhAkHZxjrIxcY=",
+      "username": "56789012l6v4"
+    }
+  },
+  {
+    "model": "arriendo.user",
+    "fields": {
+      "rut": 67890123,
+      "first_name": "Isabella",
+      "second_name": "Cristina",
+      "last_name": "Ortiz",
+      "second_surname": "Vega",
+      "address": "Calle San Pablo 789, Santiago",
+      "phone_number": "956789012",
+      "email": "isabella.ortiz@example.com",
+      "user_type": 2,
+      "password": "pbkdf2_sha256$720000$qQ3wueoJ7E8rMNNpGpzTmA$9ZvFBtHo25tsgqnArZNTYHz7yFMfnaqhAkHZxjrIxcY=",
+      "username": "67890123j3m9"
+    }
+  },
+  {
+    "model": "arriendo.user",
+    "fields": {
+      "rut": 178901234,
+      "first_name": "Felipe",
+      "second_name": "Andrés",
+      "last_name": "Maldonado",
+      "second_surname": "Alvarez",
+      "address": "Av. Kennedy 345, Santiago",
+      "phone_number": "967890123",
+      "email": "felipe.maldonado@example.com",
+      "user_type": 1,
+      "password": "pbkdf2_sha256$720000$qQ3wueoJ7E8rMNNpGpzTmA$9ZvFBtHo25tsgqnArZNTYHz7yFMfnaqhAkHZxjrIxcY=",
+      "username": "78901234k2q8"
+    }
+  },
+  {
+    "model": "arriendo.user",
+    "fields": {
+      "rut": 89012345,
+      "first_name": "Gabriela",
+      "second_name": "Lorena",
+      "last_name": "Salazar",
+      "second_surname": "Mora",
+      "address": "Calle Los Militares 123, Santiago",
+      "phone_number": "978901234",
+      "email": "gabriela.salazar@example.com",
+      "user_type": 2,
+      "password": "pbkdf2_sha256$720000$qQ3wueoJ7E8rMNNpGpzTmA$9ZvFBtHo25tsgqnArZNTYHz7yFMfnaqhAkHZxjrIxcY=",
+      "username": "89012345b8r7"
+    }
+  },
+  {
+    "model": "arriendo.user",
+    "fields": {
+      "rut": 90123456,
+      "first_name": "Javier",
+      "second_name": "Alejandro",
+      "last_name": "López",
+      "second_surname": "Moreno",
+      "address": "Av. Salvador 456, Santiago",
+      "phone_number": "989012345",
+      "email": "javier.lopez@example.com",
+      "user_type": 1,
+      "password": "pbkdf2_sha256$720000$qQ3wueoJ7E8rMNNpGpzTmA$9ZvFBtHo25tsgqnArZNTYHz7yFMfnaqhAkHZxjrIxcY=",
+      "username": "90123456t9u3"
+    }
+  },
+  {
+    "model": "arriendo.user",
+    "fields": {
+      "rut": 123450018,
+      "first_name": "Valentina",
+      "second_name": "Andrea",
+      "last_name": "Sánchez",
+      "second_surname": "Rivas",
+      "address": "Calle Santa María 678, Santiago",
+      "phone_number": "990123456",
+      "email": "valentina.sanchez@example.com",
+      "user_type": 2,
+      "password": "pbkdf2_sha256$720000$qQ3wueoJ7E8rMNNpGpzTmA$9ZvFBtHo25tsgqnArZNTYHz7yFMfnaqhAkHZxjrIxcY=",
+      "username": "12345001w6v2"
+    }
+  },
+  {
+    "model": "arriendo.user",
+    "fields": {
+      "rut": 123456012,
+      "first_name": "Mateo",
+      "second_name": "Ricardo",
+      "last_name": "Cruz",
+      "second_surname": "Hernández",
+      "address": "Av. Tobalaba 789, Santiago",
+      "phone_number": "901234567",
+      "email": "mateo.cruz@example.com",
+      "user_type": 1,
+      "password": "pbkdf2_sha256$720000$qQ3wueoJ7E8rMNNpGpzTmA$9ZvFBtHo25tsgqnArZNTYHz7yFMfnaqhAkHZxjrIxcY=",
+      "username": "23456012u5z1"
+    }
+  }
+]

@@ -17,7 +17,6 @@ class UserType(models.Model):
         return self.name
 
 class User(AbstractUser):
- 
     rut = models.CharField(max_length=9, primary_key=True)
     second_name = models.CharField(max_length=50, blank=True)
     second_surname= models.CharField(max_length=50, null=False)
@@ -56,6 +55,9 @@ class HouseType(models.Model):
 class Region(models.Model):
     name = models.CharField(max_length=50, null=False)
 
+    def __str__(self) -> str:
+        return self.name
+
 class Commune(models.Model):
     name = models.CharField(max_length=50, null=False)
     region_id = models.ForeignKey(Region, on_delete=models.CASCADE, related_name='communes')
@@ -77,7 +79,7 @@ class Property(models.Model):
     owner = models.ForeignKey(User, on_delete=models.CASCADE, related_name='owned_properties')
     tenant = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, blank=True,related_name='rented_properties')
     active = models.BooleanField(default=True)
-    
+
     def __str__(self):
         return(f'''
         Nombre: {self.name}
@@ -89,6 +91,7 @@ class Property(models.Model):
         N° baño: {self.bathrooms}
         Dirección: {self.address}
         Comuna: {self.commune}
+        Región: {self.commune.region.name}
         Tipo de vivienda: {self.house_type}
         Precio: {self.price}
         Dueño: {self.owner.first_name} {self.owner.last_name}

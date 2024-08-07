@@ -380,7 +380,7 @@ add_commune('Padre Hurtado', 15)
 add_commune('Peñaflor', 15)
 
 # Crear usuarios
-dueno = create_user('188888888', 'Leslie', '', 'Reyes', 'Villalobos', 'Vicuña Mackenna 2020', '+56999999999', 'leslie@mail.com', user_type_1.id, '123456lil')
+dueno = create_user('188888888', 'Leslie', '', 'Reyes', 'Villalobos', 'Vicuña Mackenna 2020', '+56999999999', 'leslie@mail.com', 1, 'password123')
 arrendatario = create_user('199999999', 'Gonzalo', 'Andrés', 'Gangas', 'Segura', 'Macul 15987', '+56999999999', 'gonzalo@mail.com', user_type_2.id, '123456lil')
 
 # Crear propiedad

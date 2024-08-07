@@ -1,0 +1,102 @@
+[
+  {
+    "model": "arriendo.property",
+    "pk": 1,
+    "fields": {
+      "name": "Parcela en Lota",
+      "description": "¡Descubre esta hermosa parcela en Lota, ideal para quienes buscan tranquilidad y confort! Esta propiedad cuenta con 300 m² construidos sobre un terreno total de 450 m². Consta de 6 amplias habitaciones y 4 modernos baños, perfectos para grandes familias o grupos. El inmueble está ubicado en una tranquila comuna de Lota, ofreciendo el equilibrio perfecto entre la cercanía a servicios esenciales y la paz de un entorno natural.",
+      "constructed_meters": 300,
+      "total_meters": 450,
+      "parking_lots": 4,
+      "rooms": 6,
+      "bathrooms": 4,
+      "address": "Av. Los Claveles 345",
+      "commune": 151,
+      "house_type": 3,
+      "price": 1200000,
+      "owner": 178901234,
+      "created_at": "2024-08-07",
+      "updated_at": "2024-08-07"
+    }
+  },
+  {
+    "model": "arriendo.property",
+    "pk": 2,
+    "fields": {
+      "name": "Moderno Departamento en La Serena en Arriendo",
+      "description": "Vive la comodidad y el estilo en La Serena con este moderno departamento, ideal para quienes buscan un hogar funcional en una de las zonas más agradables de la ciudad. Vive la comodidad y el estilo en La Serena con este moderno departamento, ideal para quienes buscan un hogar funcional en una de las zonas más agradables de la ciudad.",
+      "constructed_meters": 100,
+      "total_meters": 120,
+      "parking_lots": 1,
+      "rooms": 3,
+      "bathrooms": 2,
+      "address": "Avenida Del Mar 456",
+      "commune": 30,
+      "house_type": 2,
+      "price": 500000,
+      "owner": 56789012,
+      "created_at": "2024-08-02",
+      "updated_at": "2024-08-02"
+    }
+  },
+  {
+    "model": "arriendo.property",
+    "pk": 3,
+    "fields": {
+      "name": "Hermosa parcela en Chaitén",
+      "description": "Disfruta de la belleza natural de Chaitén con esta encantadora parcela. Con una superficie construida de 382 m² sobre un terreno total de 500 m², esta propiedad es ideal para quienes buscan un rincón tranquilo en medio de la naturaleza. La parcela cuenta con 5 habitaciones y 3 baños, perfecta para quienes buscan simplicidad y confort en un entorno natural.",
+      "constructed_meters": 382,
+      "total_meters": 500,
+      "parking_lots": 4,
+      "rooms": 5,
+      "bathrooms": 3,
+      "address": "Camino a Chaitén 789",
+      "commune": 270,
+      "house_type": 3,
+      "price": 1400000,
+      "owner": 90123456,
+      "created_at": "2024-07-30",
+      "updated_at": "2024-07-30"
+    }
+  },
+  {
+    "model": "arriendo.property",
+    "pk": 4,
+    "fields": {
+      "name": "Hermoso departamento en Recoleta",
+      "description": "Vive en la vibrante comuna de Recoleta con este moderno departamento que combina comodidad y estilo en un entorno urbano. Ideal para quienes buscan un espacio funcional y bien ubicado en la capital. El departamento cuenta con modernos acabados y una distribución eficiente, ofreciendo un ambiente confortable y acogedor. Su ubicación en Recoleta proporciona fácil acceso a transporte público, centros comerciales, y una variedad de servicios y entretenimientos.",
+      "constructed_meters": 78,
+      "total_meters": 90,
+      "parking_lots": 1,
+      "rooms": 2,
+      "bathrooms": 1,
+      "address": "Avenida Recoleta 4567",
+      "commune": 320,
+      "house_type": 2,
+      "price": 600000,
+      "owner": 134567890,
+      "created_at": "2024-07-07",
+      "updated_at": "2024-07-07"
+    }
+  },
+  {
+    "model": "arriendo.property",
+    "pk": 5,
+    "fields": {
+      "name": "Amplia y acogedora casa en La Reina",
+      "description": "Descubre esta hermosa casa ubicada en la tranquila comuna de La Reina, Santiago. Con un diseño funcional y acogedor, esta propiedad es ideal para familias o quienes buscan un hogar cómodo en un entorno residencial y apacible. Su ubicación en La Reina proporciona un acceso fácil a servicios, escuelas y áreas recreativas.",
+      "constructed_meters": 170,
+      "total_meters": 250,
+      "parking_lots": 2,
+      "rooms": 3,
+      "bathrooms": 2,
+      "address": "Calle Los Cipreses 1234",
+      "commune": 306,
+      "house_type": 1,
+      "price": 800000,
+      "owner": 123456781,
+      "created_at": "2024-08-01",
+      "updated_at": "2024-08-01"
+    }
+  }
+]
