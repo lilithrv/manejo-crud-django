@@ -33,7 +33,7 @@ pip install django
 pip install psycopg2
 ```
 
-- Instalar decouple (environment variables)
+- Install decouple (environment variables)
 
 ```python
 pip install python-decouple
