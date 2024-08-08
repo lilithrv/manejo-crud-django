@@ -1,0 +1,20 @@
+[
+  {
+    "model": "arriendo.housetype",
+    "fields": {
+      "name": "Casa"
+    }
+  },
+  {
+    "model": "arriendo.housetype",
+    "fields": {
+      "name": "Departamento"
+    }
+  },
+  {
+    "model": "arriendo.housetype",
+    "fields": {
+      "name": "Parcela"
+    }
+  }
+]

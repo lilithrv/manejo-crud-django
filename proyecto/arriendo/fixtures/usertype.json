@@ -1,0 +1,14 @@
+[
+  {
+    "model": "arriendo.usertype",
+    "fields": {
+      "name": "Propietario"
+    }
+  },
+  {
+    "model": "arriendo.usertype",
+    "fields": {
+      "name": "Arrendatario"
+    }
+  }
+]
