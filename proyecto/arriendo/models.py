@@ -1,9 +1,4 @@
 from django.db import models
-from .validate import validate_rut
-from django.core.exceptions import ValidationError
-
-# Create your models here.
-from django.db import models
 
 # Create your models here.
 from django.db import models
@@ -25,15 +20,6 @@ class User(AbstractUser):
     user_type= models.ForeignKey(UserType, on_delete=models.CASCADE, related_name='users')
     groups = models.ManyToManyField(Group, related_name='custom_user_set')
     user_permissions = models.ManyToManyField(Permission, related_name='custom_user_set')
-
-    def clean(self):
-        super().clean()
-        if not validate_rut(self.rut):
-            raise ValidationError({'El RUT ingresado no es válido.'})
-
-    def save(self, *args, **kwargs):
-        self.full_clean()  
-        super().save(*args, **kwargs)
 
     def __str__(self):
         return(f'''
@@ -91,7 +77,6 @@ class Property(models.Model):
         N° baño: {self.bathrooms}
         Dirección: {self.address}
         Comuna: {self.commune}
-        Región: {self.commune.region.name}
         Tipo de vivienda: {self.house_type}
         Precio: {self.price}
         Dueño: {self.owner.first_name} {self.owner.last_name}

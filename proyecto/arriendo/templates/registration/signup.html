@@ -1,0 +1,160 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block contenido %}
+<div class="container py-5">
+    <hr>
+    <h2 class="text-center">Registro</h2>
+    <hr>
+    <form method="post" class="pt-4">
+        {% csrf_token %}
+        <div class="mb-3 row">
+            <label for="{{ form.rut.id_for_label }}" class="col-sm-2 col-form-label">Rut</label>
+            <div class="col-sm-10">
+                <input type="text" name="{{ form.rut.name }}" class="form-control" id="{{ form.rut.id_for_label }}"
+                    value="{{ form.rut.value|default_if_none:'' }}" required>
+            </div>
+            {% if form.rut.errors %}
+            <div class="text-danger">
+                {{ form.rut.errors }}
+            </div>
+            {% endif %}
+        </div>
+        <div class="mb-3 row">
+            <label for="{{ form.first_name.id_for_label }}" class="col-sm-2 col-form-label">Nombre</label>
+            <div class="col-sm-10">
+                <input type="text" name="{{ form.first_name.name }}" class="form-control"
+                    id="{{ form.first_name.id_for_label }}" value="{{ form.first_name.value|default_if_none:'' }}"
+                    required>
+            </div>
+            {% if form.first_name.errors %}
+            <div class="text-danger">
+                {{ form.first_name.errors }}
+            </div>
+            {% endif %}
+        </div>
+        <div class="mb-3 row">
+            <label for="{{ form.second_name.id_for_label }}" class="col-sm-2 col-form-label">Segundo Nombre</label>
+            <div class="col-sm-10">
+                <input type="text" name="{{ form.second_name.name }}" class="form-control"
+                    id="{{ form.second_name.id_for_label }}" value="{{ form.second_name.value|default_if_none:'' }}">
+            </div>
+            {% if form.second_name.errors %}
+            <div class="text-danger">
+                {{ form.second_name.errors }}
+            </div>
+            {% endif %}
+        </div>
+        <div class="mb-3 row">
+            <label for="{{ form.last_name.id_for_label }}" class="col-sm-2 col-form-label"> Primer Apellido</label>
+            <div class="col-sm-10">
+                <input type="text" name="{{ form.last_name.name }}" class="form-control"
+                    id="{{ form.last_name.id_for_label }}" value="{{ form.last_name.value|default_if_none:'' }}"
+                    required>
+            </div>
+            {% if form.last_name.errors %}
+            <div class="text-danger">
+                {{ form.last_name.errors }}
+            </div>
+            {% endif %}
+        </div>
+        <div class="mb-3 row">
+            <label for="{{ form.second_surname.id_for_label }}" class="col-sm-2 col-form-label">Segundo Apellido</label>
+            <div class="col-sm-10">
+                <input type="text" name="{{ form.second_surname.name }}" class="form-control"
+                    id="{{ form.second_surname.id_for_label }}"
+                    value="{{ form.second_surname.value|default_if_none:'' }}" required>
+            </div>
+            {% if form.second_surname.errors %}
+            <div class="text-danger">
+                {{ form.second_surname.errors }}
+            </div>
+            {% endif %}
+        </div>
+        <div class="mb-3 row">
+            <label for="{{ form.email.id_for_label }}" class="col-sm-2 col-form-label">Email</label>
+            <div class="col-sm-10">
+                <input type="text" name="{{ form.email.name }}" class="form-control" id="{{ form.email.id_for_label }}"
+                    value="{{ form.email.value|default_if_none:'' }}" required>
+            </div>
+            {% if form.email.errors %}
+            <div class="text-danger">
+                {{ form.email.errors }}
+            </div>
+            {% endif %}
+        </div>
+        <div class="mb-3 row">
+            <label for="{{ form.address.id_for_label }}" class="col-sm-2 col-form-label">Dirección</label>
+            <div class="col-sm-10">
+                <input type="text" name="{{ form.address.name }}" class="form-control"
+                    id="{{ form.address.id_for_label }}" value="{{ form.address.value|default_if_none:'' }}" required>
+            </div>
+            {% if form.address.errors %}
+            <div class="text-danger">
+                {{ form.address.errors }}
+            </div>
+            {% endif %}
+        </div>
+        <div class="mb-3 row">
+            <label for="{{ form.phone_number.id_for_label }}" class="col-sm-2 col-form-label">Teléfono</label>
+            <div class="col-sm-10">
+                <input type="text" name="{{ form.phone_number.name }}" class="form-control"
+                    id="{{ form.phone_number.id_for_label }}" value="{{ form.phone_number.value|default_if_none:'' }}"
+                    required>
+            </div>
+            {% if form.phone_number.errors %}
+            <div class="text-danger">
+                {{ form.phone_number.errors }}
+            </div>
+            {% endif %}
+        </div>
+        <div class="mb-3 row">
+            <label for="{{ form.user_type.id_for_label }}" class="col-sm-2 col-form-label">Tipo de usuario</label>
+            <div class="col-sm-10">
+                {{ form.user_type}}
+            </div>
+            {% if form.user_type.errors %}
+            <div class="text-danger">
+                {{ form.user_type.errors }}
+            </div>
+            {% endif %}
+        </div>
+        <div class="mb-3 row">
+            <label for="{{ form.password1.id_for_label }}" class="col-sm-2 col-form-label">Contraseña</label>
+            <div class="col-sm-10">
+                <input type="password" name="{{ form.password1.name }}" class="form-control"
+                    id="{{ form.password1.id_for_label }}" value="{{ form.password1.value|default_if_none:'' }}"
+                    required>
+            </div>
+            {% if form.password1.errors %}
+            <div class="text-danger">
+                {{ form.password1.errors }}
+            </div>
+            {% endif %}
+        </div>
+        <div class="mb-3 row">
+            <label for="{{ form.password2.id_for_label }}" class="col-sm-2 col-form-label">Confirmar contraseña</label>
+            <div class="col-sm-10">
+                <input type="password" name="{{ form.password2.name }}" class="form-control"
+                    id="{{ form.password2.id_for_label }}" value="{{ form.password2.value|default_if_none:'' }}"
+                    required>
+            </div>
+            {% if form.password2.errors %}
+            <div class="text-danger">
+                {{ form.password2.errors }}
+            </div>
+            {% endif %}
+        </div>
+        {% if form.non_field_errors %}
+        <div class="alert alert-danger">
+            {% for error in form.non_field_errors %}
+            <p>{{ error }}</p>
+            {% endfor %}
+        </div>
+        {% endif %}
+        <div class="text-center">
+            <button type="submit" class="btn btn-auth">Registrarse</button>
+        </div>
+    </form>
+</div>
+{% endblock %}

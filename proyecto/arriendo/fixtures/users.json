@@ -9,10 +9,26 @@
       "second_surname": "Pérez",
       "address": "Av. Providencia 1234, Santiago",
       "phone_number": "987654321",
-      "email": "juan.gomez@example.com",
+      "email": "juan.gomez@mail.com",
       "user_type": 1,
       "password": "pbkdf2_sha256$720000$qQ3wueoJ7E8rMNNpGpzTmA$9ZvFBtHo25tsgqnArZNTYHz7yFMfnaqhAkHZxjrIxcY=",
       "username": "12345678abc1"
+    }
+  },
+  {
+    "model": "arriendo.user",
+    "fields": {
+      "rut": 188888888,
+      "first_name": "Leslie",
+      "second_name": "",
+      "last_name": "Reyes",
+      "second_surname": "Villalobos",
+      "address": "Vicuña Mackenna 2030, La Florida",
+      "phone_number": "987654321",
+      "email": "leslie@mail.com",
+      "user_type": 1,
+      "password": "pbkdf2_sha256$720000$qQ3wueoJ7E8rMNNpGpzTmA$9ZvFBtHo25tsgqnArZNTYHz7yFMfnaqhAkHZxjrIxcY=",
+      "username": "18888abc1"
     }
   },
   {
@@ -25,7 +41,7 @@
       "second_surname": "Castro",
       "address": "Calle Los Condores 567, Santiago",
       "phone_number": "912345678",
-      "email": "maria.munoz@example.com",
+      "email": "maria.munoz@mail.com",
       "user_type": 2,
       "password": "pbkdf2_sha256$720000$qQ3wueoJ7E8rMNNpGpzTmA$9ZvFBtHo25tsgqnArZNTYHz7yFMfnaqhAkHZxjrIxcY=",
       "username": "23456789d4f2"
@@ -41,7 +57,7 @@
       "second_surname": "Soto",
       "address": "Av. Libertador 987, Santiago",
       "phone_number": "923456789",
-      "email": "luis.navarro@example.com",
+      "email": "luis.navarro@mail.com",
       "user_type": 1,
       "password": "pbkdf2_sha256$720000$qQ3wueoJ7E8rMNNpGpzTmA$9ZvFBtHo25tsgqnArZNTYHz7yFMfnaqhAkHZxjrIxcY=",
       "username": "34567890h7k8"
@@ -57,7 +73,7 @@
       "second_surname": "Martínez",
       "address": "Calle La Reina 456, Santiago",
       "phone_number": "934567890",
-      "email": "ana.rivas@example.com",
+      "email": "ana.rivas@mail.com",
       "user_type": 2,
       "password": "pbkdf2_sha256$720000$qQ3wueoJ7E8rMNNpGpzTmA$9ZvFBtHo25tsgqnArZNTYHz7yFMfnaqhAkHZxjrIxcY=",
       "username": "45678901x9y5"
@@ -73,7 +89,7 @@
       "second_surname": "García",
       "address": "Av. O'Higgins 123, Santiago",
       "phone_number": "945678901",
-      "email": "carlos.perez@example.com",
+      "email": "carlos.perez@mail.com",
       "user_type": 1,
       "password": "pbkdf2_sha256$720000$qQ3wueoJ7E8rMNNpGpzTmA$9ZvFBtHo25tsgqnArZNTYHz7yFMfnaqhAkHZxjrIxcY=",
       "username": "56789012l6v4"
@@ -89,7 +105,7 @@
       "second_surname": "Vega",
       "address": "Calle San Pablo 789, Santiago",
       "phone_number": "956789012",
-      "email": "isabella.ortiz@example.com",
+      "email": "isabella.ortiz@mail.com",
       "user_type": 2,
       "password": "pbkdf2_sha256$720000$qQ3wueoJ7E8rMNNpGpzTmA$9ZvFBtHo25tsgqnArZNTYHz7yFMfnaqhAkHZxjrIxcY=",
       "username": "67890123j3m9"
@@ -105,7 +121,7 @@
       "second_surname": "Alvarez",
       "address": "Av. Kennedy 345, Santiago",
       "phone_number": "967890123",
-      "email": "felipe.maldonado@example.com",
+      "email": "felipe.maldonado@mail.com",
       "user_type": 1,
       "password": "pbkdf2_sha256$720000$qQ3wueoJ7E8rMNNpGpzTmA$9ZvFBtHo25tsgqnArZNTYHz7yFMfnaqhAkHZxjrIxcY=",
       "username": "78901234k2q8"
@@ -121,7 +137,7 @@
       "second_surname": "Mora",
       "address": "Calle Los Militares 123, Santiago",
       "phone_number": "978901234",
-      "email": "gabriela.salazar@example.com",
+      "email": "gabriela.salazar@mail.com",
       "user_type": 2,
       "password": "pbkdf2_sha256$720000$qQ3wueoJ7E8rMNNpGpzTmA$9ZvFBtHo25tsgqnArZNTYHz7yFMfnaqhAkHZxjrIxcY=",
       "username": "89012345b8r7"
@@ -137,7 +153,7 @@
       "second_surname": "Moreno",
       "address": "Av. Salvador 456, Santiago",
       "phone_number": "989012345",
-      "email": "javier.lopez@example.com",
+      "email": "javier.lopez@mail.com",
       "user_type": 1,
       "password": "pbkdf2_sha256$720000$qQ3wueoJ7E8rMNNpGpzTmA$9ZvFBtHo25tsgqnArZNTYHz7yFMfnaqhAkHZxjrIxcY=",
       "username": "90123456t9u3"
@@ -153,7 +169,7 @@
       "second_surname": "Rivas",
       "address": "Calle Santa María 678, Santiago",
       "phone_number": "990123456",
-      "email": "valentina.sanchez@example.com",
+      "email": "valentina.sanchez@mail.com",
       "user_type": 2,
       "password": "pbkdf2_sha256$720000$qQ3wueoJ7E8rMNNpGpzTmA$9ZvFBtHo25tsgqnArZNTYHz7yFMfnaqhAkHZxjrIxcY=",
       "username": "12345001w6v2"
@@ -169,7 +185,7 @@
       "second_surname": "Hernández",
       "address": "Av. Tobalaba 789, Santiago",
       "phone_number": "901234567",
-      "email": "mateo.cruz@example.com",
+      "email": "mateo.cruz@mail.com",
       "user_type": 1,
       "password": "pbkdf2_sha256$720000$qQ3wueoJ7E8rMNNpGpzTmA$9ZvFBtHo25tsgqnArZNTYHz7yFMfnaqhAkHZxjrIxcY=",
       "username": "23456012u5z1"

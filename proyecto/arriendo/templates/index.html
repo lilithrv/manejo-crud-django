@@ -1,0 +1,22 @@
+{% extends "./base.html" %}
+{% load static %}
+
+{% block contenido %}
+<div>
+    <section id="highlights" class="py-5 container">
+        <hr>
+        {% if messages %}
+        {% for message in messages %}
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            {{ message }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        {% endfor %}
+        {% endif %}
+        <h2 class="text-center">ARRIENDO DE PROPIEDADES</h2>
+        <hr>
+
+    </section>
+</div>
+
+{% endblock %}
