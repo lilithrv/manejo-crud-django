@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+{% block contenido %}
+<div class="py-5 container">
+
+    <hr>
+    <h2 class="text-center">MIS PROPIEDADES</h2>
+    <div class="row pt-2">
+        <ul class="list-group list-group-numbered">
+            {% for property in properties %}
+
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">{{ property.name }}</div>
+                    {{ property.address }}
+                </div>
+                <span class="badge text-bg-warning rounded-pill">
+                    <a href="{% url 'edit_property' property.id %}" class="btn btn-warning btn-sm">Editar</a>
+                </span>
+                <span class="badge text-bg-danger rounded-pill mx-2">
+                    <a data-url="{% url 'delete_property' property.id %}" class="btn btn-danger btn-sm"
+                        data-bs-toggle="modal" data-bs-target="#deleteModal">Eliminar</a>
+                </span>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="deleteModalLabel">¿Estás seguro que quieres borrar esta propiedad?</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <form method="POST" id="deleteForm">
+                    {% csrf_token %}
+                    <button type="submit" class="btn btn-primary">Eliminar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var deleteModal = document.getElementById('deleteModal');
+
+        deleteModal.addEventListener('show.bs.modal', function (event) {
+            var button = event.relatedTarget;
+            var url = button.getAttribute('data-url');
+            var form = deleteModal.querySelector('#deleteForm');
+            form.setAttribute('action', url);
+        });
+    });
+</script>
+{% endblock %}

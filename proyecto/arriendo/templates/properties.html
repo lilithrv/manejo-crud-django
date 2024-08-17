@@ -1,0 +1,82 @@
+{% extends 'base.html' %} {% block contenido %}
+<div>
+    <section id="highlights" class="py-5 container">
+        <hr />
+        <h2 class="text-center">LISTADO DE PROPIEDADES</h2>
+        <hr />
+    </section>
+    <div class="container">
+        <div class="row mb-3">
+            <div class="col">
+                <form id="regiones" name="regiones" action="/properties" method="POST">
+                    {% csrf_token %}
+                    <label for="region" class="form-label">Región</label>
+                    <select id="region" name="region" class="form-select">
+                        <option value="" disabled selected>-- Todas --</option>
+                        {% for region in regions %}
+                        <option value="{{ region.id }}">{{ region.name }}</option>
+                        {% endfor %}
+                    </select>
+                </form>
+            </div>
+            <form action="/properties" id="communes" name="communes" method="POST">
+                {% csrf_token %}
+                <div class="col">
+                    <label for="commune" class="form-label">Comuna</label>
+                    <select id="commune" name="commune" class="form-select">
+                        <option value="" disabled selected>-- Selecciona una comuna --</option>
+                        {% for commune in communes %}
+                        <option value="{{ commune.id }}">{{ commune.name }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+            </form>
+        </div>
+    </div>
+    {% if properties %}
+    <div class="row pt-2">
+        <ul class="list-group list-group-numbered">
+            {% for property in properties %}
+
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">{{property.name}}</div>
+                    {{property.address}}
+                </div>
+                <span class="badge text-bg-primary rounded-pill"><a href="{% url 'property_detail' property.id %}"
+                        class="btn btn-primary btn-sm">Ver más</a></span>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% else %}
+    <div class="pt-5">
+        <p class="text-center fs-3">Aún no hay propiedades disponibles en este sector</p>
+    </div>
+    {% endif %}
+
+</div>
+<script>
+    window.addEventListener('DOMContentLoaded', function () {
+        {% if region_selected %}
+        document.querySelector('#region').value = "{{ region_selected }}";
+        {% endif %}
+        
+        document.querySelector('#region').addEventListener('change', function (event) {
+            event.preventDefault();
+            document.getElementById('regiones').submit();
+        });
+        
+        {% if commune_selected %}
+        document.querySelector('#commune').value = "{{ commune_selected }}";
+        {% endif %}
+        
+        document.querySelector('#commune').addEventListener('change', function (event) {
+            event.preventDefault();
+            document.getElementById('communes').submit();
+        });
+    });
+</script>
+
+
+{% endblock %}

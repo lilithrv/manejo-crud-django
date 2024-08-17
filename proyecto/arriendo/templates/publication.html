@@ -1,0 +1,177 @@
+{% extends 'base.html' %}
+
+{% block contenido %}
+<div>
+    <section id="highlights" class="py-5 container">
+        <hr>
+        <h2 class="text-center">AGREGAR PUBLICACIÓN</h2>
+        <hr>
+        <form method="post" class="pt-4">
+            {% csrf_token %}
+            <div class="mb-3 row">
+                <label for="{{ property_form.name.id_for_label }}" class="col-sm-2 col-orm-label">Nombre
+                    propiedad</label>
+                <div class="col-sm-10">
+                    <input type="text" name="{{ property_form.name.name }}" class="form-control"
+                        id="{{ property_form.name.id_for_label }}"
+                        value="{{ property_form.name.value|default_if_none:'' }}" required>
+                </div>
+                {% if property_form.name.errors %}
+                <div class="text-danger">
+                    {{ property_form.name.errors }}
+                </div>
+                {% endif %}
+            </div>
+            <div class="mb-3 row">
+                <label for="{{ property_form.description.id_for_label }}"
+                    class="col-sm-2 col-form-label">Descripción</label>
+                <div class="col-sm-10">
+                    <textarea type="text" name="{{ property_form.description.name }}" class="form-control"
+                        id="{{ property_form.description.id_for_label }}"
+                        value="{{ property_form.description.value|default_if_none:'' }}" required> </textarea>
+                </div>
+                {% if property_form.description.errors %}
+                <div class="text-danger">
+                    {{ property_form.description.errors }}
+                </div>
+                {% endif %}
+            </div>
+            <div class="mb-3 row">
+                <label for="{{ property_form.address.id_for_label }}" class="col-sm-2 col-form-label">Dirección</label>
+                <div class="col-sm-10">
+                    <input type="text" name="{{ property_form.address.name }}" class="form-control"
+                        id="{{ property_form.address.id_for_label }}"
+                        value="{{ property_form.address.value|default_if_none:'' }}" required>
+                </div>
+                {% if property_form.address.errors %}
+                <div class="text-danger">
+                    {{ property_form.address.errors }}
+                </div>
+                {% endif %}
+            </div>
+            <div class="mb-3 row">
+                <label for="{{ property_form.commune.id_for_label }}" class="col-sm-2 col-form-label">Comuna</label>
+                <div class="col-sm-10">
+                    {{ property_form.commune}}
+                </div>
+                {% if property_form.commune.errors %}
+                <div class="text-danger">
+                    {{ property_form.commune.errors }}
+                </div>
+                {% endif %}
+            </div>
+            <div class="mb-3 row">
+                <label for="{{ property_form.house_type.id_for_label }}" class="col-sm-2 col-property_form-label">Tipo
+                    de
+                    propiedad</label>
+                <div class="col-sm-10">
+                    {{ property_form.house_type}}
+                </div>
+                {% if property_form.house_type.errors %}
+                <div class="text-danger">
+                    {{ property_form.house_type.errors }}
+                </div>
+                {% endif %}
+            </div>
+            <div class="mb-3 row">
+                <label for="{{ property_form.constructed_meters.id_for_label }}" class="col-sm-2 col-form-label">Metros
+                    Construidos</label>
+                <div class="col-sm-10">
+                    <input type="number" step="any" name="{{ property_form.constructed_meters.name }}"
+                        class="form-control" id="{{ property_form.constructed_meters.id_for_label }}"
+                        value="{{ property_form.constructed_meters.value|default_if_none:'' }}" required>
+                </div>
+                {% if property_form.constructed_meters.errors %}
+                <div class="text-danger">
+                    {{ property_form.constructed_meters.errors }}
+                </div>
+                {% endif %}
+            </div>
+            <div class="mb-3 row">
+                <label for="{{ property_form.total_meters.id_for_label }}" class="col-sm-2 col-form-label">Metros
+                    Totales</label>
+                <div class="col-sm-10">
+                    <input type="number" step="any" name="{{ property_form.total_meters.name }}" class="form-control"
+                        id="{{ property_form.total_meters.id_for_label }}"
+                        value="{{ property_form.total_meters.value|default_if_none:'' }}" required>
+                </div>
+                {% if property_form.total_meters.errors %}
+                <div class="text-danger">
+                    {{ property_form.total_meters.errors }}
+                </div>
+                {% endif %}
+            </div>
+            <div class="mb-3 row">
+                <label for="{{ property_form.rooms.id_for_label }}" class="col-sm-2 col-form-label">N° de
+                    habitaciones</label>
+                <div class="col-sm-10">
+                    <input type="number" min="1" name="{{ property_form.rooms.name }}" class="form-control"
+                        id="{{ property_form.rooms.id_for_label }}"
+                        value="{{ property_form.rooms.value|default_if_none:'' }}" required>
+                </div>
+                {% if property_form.rooms.errors %}
+                <div class="text-danger">
+                    {{ property_form.rooms.errors }}
+                </div>
+                {% endif %}
+            </div>
+            <div class="mb-3 row">
+                <label for="{{ property_form.bathrooms.id_for_label }}" class="col-sm-2 col-form-label">N° baños</label>
+                <div class="col-sm-10">
+                    <input type="number" min="1" name="{{ property_form.bathrooms.name }}" class="form-control"
+                        id="{{ property_form.bathrooms.id_for_label }}"
+                        value="{{ property_form.bathrooms.value|default_if_none:'' }}" required>
+                </div>
+                {% if property_form.bathrooms.errors %}
+                <div class="text-danger">
+                    {{ property_form.bathrooms.errors }}
+                </div>
+                {% endif %}
+            </div>
+            <div class="mb-3 row">
+                <label for="{{ property_form.parking_lots.id_for_label }}" class="col-sm-2 col-form-label">N°
+                    estacionamientos</label>
+                <div class="col-sm-10">
+                    <input type="number" min="1" name="{{ property_form.parking_lots.name }}" class="form-control"
+                        id="{{ property_form.parking_lots.id_for_label }}"
+                        value="{{ property_form.parking_lots.value|default_if_none:'' }}" required>
+                </div>
+                {% if property_form.parking_lots.errors %}
+                <div class="text-danger">
+                    {{ property_form.parking_lots.errors }}
+                </div>
+                {% endif %}
+            </div>
+            <div class="mb-3 row">
+                <label for="{{ property_form.price.id_for_label }}" class="col-sm-2 col-form-label">Precio</label>
+                <div class="col-sm-10">
+                    <input type="number" min="1" name="{{ property_form.price.name }}" class="form-control"
+                        id="{{ property_form.price.id_for_label }}"
+                        value="{{ property_form.price.value|default_if_none:'' }}" required>
+                </div>
+                {% if property_form.price.errors %}
+                <div class="text-danger">
+                    {{ property_form.price.errors }}
+                </div>
+                {% endif %}
+            </div>
+            <div class="mb-3 row">
+                <label for="{{ property_form.image_url.id_for_label }}" class="col-sm-2 col-form-label">URL Imagen</label>
+                <div class="col-sm-10">
+                    <input type="text" name="{{ property_form.image_url.name }}" class="form-control"
+                        id="{{ property_form.image_url.id_for_label }}"
+                        value="{{ property_form.image_url.value|default_if_none:'' }}" required>
+                </div>
+                {% if property_form.image_url.errors %}
+                <div class="text-danger">
+                    {{ property_form.image_url.errors }}
+                </div>
+                {% endif %}
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-auth">Publicar propiedad</button>
+            </div>
+        </form>
+    </section>
+</div>
+{% endblock %}

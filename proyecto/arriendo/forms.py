@@ -1,7 +1,7 @@
 from django import forms
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User as DjangoUser
-from .models import User, UserType
+from .models import User, UserType, Property, HouseType, Commune
 
 class SignUpForm(UserCreationForm):
     rut = forms.CharField(min_length=8, max_length=9, required=True)
@@ -48,4 +48,20 @@ class ProfileUpdateForm(forms.ModelForm):
         fields = (
             'first_name', 'second_name', 'last_name', 'email',
             'second_surname', 'address', 'phone_number', 'user_type'
+        )
+
+class PropertyForm(forms.ModelForm):
+    house_type = forms.ModelChoiceField(
+        queryset = HouseType.objects.all(),
+        widget=forms.Select(attrs={'class': 'form-select'}),
+    )
+    commune = forms.ModelChoiceField(
+        queryset = Commune.objects.all(),
+        widget=forms.Select(attrs={'class': 'form-select'}),
+    )
+
+    class Meta:
+        model = Property
+        fields =  (
+            'name', 'description', 'constructed_meters', 'total_meters', 'parking_lots', 'rooms', 'bathrooms', 'address', 'commune', 'price', 'house_type', 'image_url'
         )

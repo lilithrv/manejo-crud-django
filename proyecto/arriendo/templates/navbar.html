@@ -12,6 +12,16 @@
                     {% if user.is_authenticated %}
                     <a class="nav-link {% if request.path == '/profile' %}active{% endif %}" href="/profile">Perfil</a>
                     {% endif %}
+                    {% if user.is_authenticated and user.user_type_id == 1 %}
+                    <a class="nav-link {% if request.path == '/publication' %}active{% endif %}"
+                        href="/publication">Agregar propiedad</a>
+                    <a class="nav-link {% if request.path == '/my-properties' %}active{% endif %}"
+                        href="/my-properties">Mis propiedades</a>
+                    {% endif %}
+                    {% if user.is_authenticated and user.user_type_id == 2 %}
+                    <a class="nav-link {% if request.path == '/properties' %}active{% endif %}" href="/properties">Ver
+                        propiedades</a>
+                    {% endif %}
                 </div>
                 <div class="navbar-nav ms-auto">
                     <div class="navbar-nav ms-auto">

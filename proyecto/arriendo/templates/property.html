@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+
+{% block contenido %}
+<div>
+    <section id="highlights" class="pt-5 pb-3 container">
+        <hr>
+        <h2 class="text-center">{{property.name}}</h2>
+        <hr>
+        <h5 class="text-center">{{property.address}}, {{property.commune}}</h5>
+        {% if property.active %}
+        <h5 class="text-center text-success">Disponible</h5>
+        {% else %}
+        <h5 class="text-center text-danger">No Disponible</h5>
+        {% endif %}
+
+    </section>
+    <div>
+        {{property.description}}
+    </div>
+
+ 
+    <div class="row pb-4">
+        <div class="col-lg-7 col-md-4 col-sm-12">
+            <div class="pt-4">
+                <ul>
+                    <li>N° de habitaciones: {{property.rooms}}</li>
+                    <li>N° de baños: {{property.bathrooms}}</li>
+                    <li>N° de estacionamientos: {{property.parking_lots}}</li>
+                </ul>
+            </div>
+            <div class="pt-4">
+                <h5 class="pb-2">Datos de Contacto</h5>
+                <ul>
+                    <li>
+                        Nombre propietario: {{property.owner.first_name}} {{property.owner.last_name}}
+                    </li>
+                    <li>Teléfono de contacto: {{property.owner.phone_number}}</li>
+                </ul>
+            </div>
+            <div class="pt-4">
+                <h5>Precio</h5>
+                <p>${{property.price}} mensual</p>
+            </div>
+            <div class="pt-4">
+                <a href="{% url 'get_properties' %}" class="btn btn-primary">Volver al listado</a>
+            </div>
+        </div>
+        <div class="col-lg-5 col-md-3 col-sm-12">
+           <div class="pt-4 ">
+            <img src="{{property.image_url}}" alt="" width="500">
+           </div>
+        </div>
+    </div>
+   
+
+   
+    <div>
+       
+    </div>
+</div>
+{% endblock %}

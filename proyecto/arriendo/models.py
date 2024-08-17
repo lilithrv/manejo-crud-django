@@ -47,12 +47,15 @@ class Region(models.Model):
 class Commune(models.Model):
     name = models.CharField(max_length=50, null=False)
     region_id = models.ForeignKey(Region, on_delete=models.CASCADE, related_name='communes')
+    
+    def __str__(self) -> str:
+        return self.name
 
 class Property(models.Model):
     name = models.CharField(max_length=50, null=False)
     description = models.TextField(max_length=1000, null=False)
-    constructed_meters = models.FloatField(null=False)
-    total_meters = models.FloatField()
+    constructed_meters = models.IntegerField(null=False)
+    total_meters = models.IntegerField(null=False)
     parking_lots = models.IntegerField(null=False)
     rooms = models.IntegerField(null=False)
     bathrooms = models.IntegerField(null=False)
@@ -65,6 +68,7 @@ class Property(models.Model):
     owner = models.ForeignKey(User, on_delete=models.CASCADE, related_name='owned_properties')
     tenant = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, blank=True,related_name='rented_properties')
     active = models.BooleanField(default=True)
+    image_url = models.URLField(default="")
 
     def __str__(self):
         return(f'''
