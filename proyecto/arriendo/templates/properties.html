@@ -59,7 +59,7 @@
 <script>
     window.addEventListener('DOMContentLoaded', function () {
         {% if region_selected %}
-        document.querySelector('#region').value = "{{ region_selected }}";
+            document.querySelector('#region').value = "{{ region_selected }}";
         {% endif %}
         
         document.querySelector('#region').addEventListener('change', function (event) {
@@ -68,7 +68,7 @@
         });
         
         {% if commune_selected %}
-        document.querySelector('#commune').value = "{{ commune_selected }}";
+            document.querySelector('#commune').value = "{{ commune_selected }}";
         {% endif %}
         
         document.querySelector('#commune').addEventListener('change', function (event) {
